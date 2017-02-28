@@ -1,6 +1,10 @@
 REM Task Kill
 taskkill /im "utorrent.exe" /f
 taskkill /im "deluge.exe" /f
+taskkill /im "teamspeak.exe" /f
+taskkill /im "discord.exe" /f
+taskkill /im "hexchat.exe" /f
+taskkill /im "keepass.exe" /f
 
 REM DNS
 ipconfig /flushdns
