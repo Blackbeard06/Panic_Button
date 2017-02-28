@@ -7,7 +7,7 @@ ipconfig /flushdns
 
 REM Disconnect All Network Drives and delete RDP connection history
 net use * /delete
-DEL "C:\Users\Blackbeard\Documents\Default.rdp" /F /Q
+DEL "C:\Users\%USERNAME%\Documents\Default.rdp" /F /Q
 
 REM Delete specific locations
 DEL "E:\Downloads\*" /F /Q
@@ -17,9 +17,9 @@ DEL "E:\Downloads\Firefox\*" /F /Q
 DEL "E:\Downloads\Hexchat\*" /F /Q
 DEL "E:\Downloads\In Progress\*" /F /Q
 DEL "E:\Downloads\tfiles\*" /F /Q
-DEL "C:\Users\Blackbeard\AppData\Roaming\deluge\*" /F /Q
+DEL "C:\Users\%USERNAME%\AppData\Roaming\deluge\*" /F /Q
 DEL "E:\SafeSpace\*" /F /Q
-DEL "C:\Users\BLACKB~1\AppData\Local\Temp\*" /F /Q
+DEL "C:\Users\%USERNAME%\AppData\Local\Temp\*" /F /Q
 
 REM Redundancy
 erase "%TEMP%\*.*" /f /s /q
